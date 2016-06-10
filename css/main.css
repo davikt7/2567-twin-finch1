@@ -1,0 +1,495 @@
+@charset "UTF-8";
+/* CSS Document */
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 - Typography
+	1.01 typefaces
+	1.1 - Headings
+	1.2 - Body Copy
+	1.3 - Buttons
+		-sprite
+	1.4 - Forms
+	1.5 - Lists
+	1.6 - Tables
+2.0 - Navigation Menus
+	3.1 - Main Menu
+	3.2 - Sub Menu
+	3.3 - Footer Menu
+3.0 - Content
+	3.1 - Site Structure
+		- nav
+		- feature
+		- review
+		- roast
+		- about
+		- bottom
+	3.2 - Section Name
+	3.3 - Section Name
+4.0 - Media
+5.0 - Utility
+	5.1 - Background Colors
+	5.2 - Text Colors
+	5.3 - Text Sizes
+	5.4 - Alignments
+--------------------------------------------------------------*/
+/*-------font-family:"IM Fell English SC", serif;  font-family: "Pragati Narrow", sans-serif;  font-family: "Open Sans", sans-serif;-------- */
+/*------- lt. green[#86942a] off white[#f3f4ec] dk.brown[#4d301a] dk green[#507642] tangreen [#b1a33b]-------- */
+/*--------------------------------------------------------------
+1.0 - TYPOGRAPHY
+-------------------------------------------------------------- */
+#hero li {
+	font-size: 1.428rem;
+}
+#button, #feature {
+	font-size: 1.714rem;
+}
+#feature h3 {
+	font-size: 7.857rem;
+}
+/*-------1.01 typefaces-------- */
+html {
+	font-size: 14px;
+}
+body {
+	font-family: "IM Fell English SC", serif;
+	color: #4d301a;
+}
+/*--------------------------1.1 headings------------------------- */
+h2 {
+	font-size: 5.142rem;
+	text-align: center;
+}
+h3 {
+	font-family: "IM Fell English SC", serif;
+	font-size: 2.5rem;
+}
+/*--------------------------1.3 - Buttons------------------------- */
+.purchase:hover, .howto:hover, #submit:hover, #button:hover {
+	background-color: #b1a33b;
+	color: #f3f4ec;
+}
+#button {
+	padding: 0 2.142rem;
+	text-align: center;
+}
+#feature a {
+	margin: 2.142rem 0 4rem;
+}
+.purchase {
+	padding: 0 .714rem;
+}
+.howto {
+	padding: 0 .714rem;
+	font-size: 2rem;
+	margin-top: 2.142rem;
+}
+#submit {
+	padding: 0 1.714rem;
+	font-size: 2rem;
+	margin-top: 1rem;
+}
+.purchase, .howto, #submit {
+	text-align: left;
+}
+#button, .purchase, .howto, #submit {
+	background-color: #86942a;
+	border: none;
+	color: #f3f4ec;
+	text-decoration: none;
+	display: inline-block;
+	font-family: 'Pragati Narrow', sans-serif;
+}
+/*--------------------------sprite------------------------- */
+#fb, #fb:hover, #twit, #twit:hover, #plus, #plus:hover {
+	width: 2rem;
+	height: 2rem;
+}
+#fb, #twit, #plus {
+	background-image: url("../img/sprite.png");
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+#fb {
+	background-position: 0 0;
+}
+#fb:hover {
+	background-position: 0 -2rem;
+}
+#twit {
+	background-position: 0 -4rem;
+}
+#twit:hover {
+	background-position: 0 -6rem;
+}
+#plus {
+	background-position: 0 -8rem;
+}
+#plus:hover {
+	background-position: 0 -10rem;
+}
+#sprite li {
+	padding: 20px;
+}
+/*--------------------------1.4 - Forms------------------------- */
+label {
+	display: none;
+}
+textarea {
+	width: 100%;
+	padding: 1rem;
+}
+#form input {
+	display: block;
+	padding: 1rem 28rem 1rem 1rem;
+	margin-bottom: 1.8rem;
+}
+/*--------------------------1.5 - Lists------------------------- */
+ul {
+	list-style: none;
+}
+li, #hero li {
+	display: inline-block;
+}
+#hero ul {
+	padding-top: 2.71rem;
+}
+#hero li {
+	font-family: 'Pragati Narrow', sans-serif;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 1.428rem 0 0 0;
+	padding-right: 10%;
+}
+#hero a {
+	color: #f3f4ec;
+	text-decoration: none;
+}
+#hero a:hover {
+	color: #f3f4ec;
+}
+/*--------------------------------------------------------------
+3.0 - SITE STRUCTURE
+-------------------------------------------------------------- */
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border;
+	box-sizing: border-box;
+}
+* {
+	margin: 0;
+}
+.wrapper {
+	width: 85%; /*original width was 1170px*/
+	margin: 0 auto;
+}
+.row:after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+img {
+	max-width: 100%;
+}
+[class*="col-"], #news, #news1, #news2 {
+	float: left;
+}
+[class*="col-"]:last-of-type {
+	padding-right: 0;
+}
+a {
+	text-transform: uppercase;
+}
+/*--------------------------nav------------------------- */
+h1 {
+	width: 9.571rem;
+	margin: 1.428rem auto;
+}
+/*--------------------------feature------------------------- */
+#feature {
+	text-align: center;
+	font-family: "Open Sans";
+	font-weight: 300;
+	margin: 0 auto;
+	padding: 11rem 0 1.5rem 0;
+}
+#spec {
+	padding-top: 2.142rem;
+	font-weight: 400;
+	font-size: 2rem;
+}
+/*--------------------------review------------------------- */
+#roast {
+	text-align: center;
+	color: #4d301a;
+	margin: 2.143rem auto;
+}
+#review {
+	font-family: "IM Fell English SC", serif;
+	font-size: 3.5rem;
+	padding: 2.142rem 0;
+}
+blockquote {
+	font-family: "Open Sans", sans-serif;
+	font-size: 1.4rem;
+	font-weight: 300;
+}
+footer a {
+	font-weight: 600;
+	text-decoration: none;
+	text-transform: capitalize;
+}
+footer {
+	margin-bottom: 2.142rem;
+}
+footer a:hover {
+	color: #b1a33b;
+}
+#roast p:last-child {
+	font-family: "Open Sans", sans-serif;
+	font-size: 1.642rem;
+	font-weight: 300;
+	margin: 1rem 0 4rem;
+}
+/*--------------------------roast-------------------------*/
+.info {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 600;
+	padding-top: 1rem;
+	margin-bottom: 1rem;
+}
+.desc {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
+	padding-top: .714rem;
+}
+/*--------------------------about-------------------------*/
+#about p {
+	padding-bottom: 2rem;
+}
+#about {
+	padding: 9rem 0 4rem;
+}
+#bg {
+	background-color: #86942a;
+}
+#news {
+	padding: 2rem 0;
+}
+#news1 {
+	margin-top: -.2143rem;
+}
+#news2 {
+	margin: 2rem 0 0 4rem;
+}
+#news2 input {
+	padding: 1rem 42.86rem 1rem 1rem;
+}
+#news3 {
+	float: right;
+	background-color: #507642;
+	border: none;
+	color: #f3f4ec;
+	padding: .357rem 2rem;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 1.5rem;
+	font-family: 'Pragati Narrow', sans-serif;
+	margin-left: 4rem;
+}
+#news3:hover {
+	background-color: #b1a33b;
+}
+/*--------------------------bottom-------------------------*/
+#bg2 {
+	background-color: #cccfbc;
+}
+#contact {
+	padding: 2rem;
+}
+#find {
+	padding: 4rem 0;
+}
+/*--------------------------------------------------------------
+3.1 - SINGLE COLUMNS
+-------------------------------------------------------------- */
+.col-1 {
+	width: 100%;
+}
+.col-1-2 {
+	width: 50%;
+}
+.col-1-3 {
+	width: 33.33%;
+}
+.col-1-4 {
+	width: 25%;
+}
+.col-1-5 {
+	width: 20%;
+}
+.col-1-6 {
+	width: 16.66%;
+}
+.col-1-7 {
+	width: 14.28%
+}
+.col-1-8 {
+	width: 12.5%;
+}
+.col-1-9 {
+	width: 11.11%;
+}
+.col-1-10 {
+	width: 10%;
+}
+.col-1-11 {
+	width: 9.09%;
+}
+.col-1-12 {
+	width: 8.33%;
+}
+/*--------------------------------------------------------------
+3.2 - PARTIAL COLUMNS
+-------------------------------------------------------------- */
+.col-2-4 {
+	width: 50%
+}
+.col-2-3, .col-4-6 {
+	width: 66.66%;
+}
+.col-3-4 {
+	width: 75%;
+}
+.col-2-5 {
+	width: 40%;
+}
+.col-3-5, .col-6-10{
+	width: 60%;
+}
+.col-2-6 {
+	width: 33.33%;
+}
+.col-3-7 {
+	width: 14.28%;
+}
+.col-4-7 {
+	width: 85.7%;
+}
+.col-3-8 {
+	width: 37.5%;
+}
+.col-5-8 {
+	width: 62.5%;
+}
+.col-3-9 {
+	width: 11.11%;
+}
+.col-6-9 {
+	width: 88.88%;
+}
+.col-4-10 {
+	width: 40%;
+}
+.col-9-11 {
+	width: 81.81%;
+}
+.col-2-11 {
+	width: 18.18%;
+}
+.col-3-12 {
+	width: 8.33%;
+}
+.col-9-12 {
+	width: 91.67%;
+}
+/*--------------------------------------------------------------
+4.0 - Media
+-------------------------------------------------------------- */
+#hero {
+	background: url(../img/plantation-copy.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	color: #f3f4ec;
+}
+#map {
+	height: 25rem;
+	width: 50rem;
+}
+/*--------------------------------------------------------------
+5.0 - Utility
+-------------------------------------------------------------- */
+.rst {
+	padding: 4rem 0;
+	text-align: left;
+}
+.pad {
+	padding-left: 1.5rem;
+}
+.center {
+	margin: 0 auto;
+	float: none;
+	text-align: center;
+}
+/*----------text sizes----------- */
+.copy {
+	font-size: 1.643rem;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
+	text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+.wrapper {
+	width: 95%;
+}
+/*----------------------- COLUMNS--------------------------------------- */
+.col-3-8, .col-1-2, .col-3-5, .col-2-5, .col-1-3, .col-4-6 {
+	width: 100%;
+}
+.col-1-6 {
+	width: 40%;
+}
+.col-2-4 {
+	width: 60%;
+}
+/*-----------------------nav/top--------------------------------------- */
+#feature h3 {
+	font-size: 3.714rem;
+}
+#f2 {
+	margin: 0;
+}
+/*-----------------------roasts--------------------------------------- */
+.rst {
+	width: 100%;
+}
+/*-----------------------about--------------------------------------- */
+
+/*-----------------------newsletter--------------------------------------- */
+#news2 input {
+	padding: 8px 50px;
+}
+#news, #news1, #news2, #news3 {
+	float: none;
+}
+#news2 {
+	margin: 0 0 1.429rem 0;
+}
+#news3 {
+	margin: 0 auto 2rem;
+}
+/*-----------------------bottom--------------------------------------- */
+#form input {
+	display: block;
+	padding: 8px 0;
+	margin-bottom: 1rem;
+	width: 100%;
+}
+#hero nav {
+	margin-left: 36px;
+}
+}
